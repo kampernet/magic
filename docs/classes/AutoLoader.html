@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \AutoLoader</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/app.filters.html"><i class="icon-folder-open"></i> app/filters</a></li>
+<li><a href="../packages/app.model.html"><i class="icon-folder-open"></i> app/model</a></li>
+<li><a href="../packages/app.model.listeners.html"><i class="icon-folder-open"></i> app/model/listeners</a></li>
+<li><a href="../packages/lib.html"><i class="icon-folder-open"></i> lib</a></li>
+<li><a href="../packages/lib.aspects.html"><i class="icon-folder-open"></i> lib/aspects</a></li>
+<li><a href="../packages/lib.base.html"><i class="icon-folder-open"></i> lib/base</a></li>
+<li><a href="../packages/lib.base.actions.html"><i class="icon-folder-open"></i> lib/base/actions</a></li>
+<li><a href="../packages/lib.base.aspects.html"><i class="icon-folder-open"></i> lib/base/aspects</a></li>
+<li><a href="../packages/lib.base.filters.html"><i class="icon-folder-open"></i> lib/base/filters</a></li>
+<li><a href="../packages/lib.base.model.html"><i class="icon-folder-open"></i> lib/base/model</a></li>
+<li><a href="../packages/lib.base.renderers.html"><i class="icon-folder-open"></i> lib/base/renderers</a></li>
+<li><a href="../packages/lib.enums.html"><i class="icon-folder-open"></i> lib/enums</a></li>
+<li><a href="../packages/lib.exceptions.html"><i class="icon-folder-open"></i> lib/exceptions</a></li>
+<li><a href="../packages/lib.filters.html"><i class="icon-folder-open"></i> lib/filters</a></li>
+<li><a href="../packages/lib.renderers.html"><i class="icon-folder-open"></i> lib/renderers</a></li>
+<li><a href="../packages/lib.sessions.html"><i class="icon-folder-open"></i> lib/sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">153</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___clone" title="__clone :: "><span class="description">__clone()
+        </span><pre>__clone()</pre></a></li>
+<li class="method public "><a href="#method_autoload" title="autoload :: This function is registered with the SPL"><span class="description">This function is registered with the SPL</span><pre>autoload()</pre></a></li>
+<li class="method public "><a href="#method_expireCache" title="expireCache :: expires the cache"><span class="description">expires the cache</span><pre>expireCache()</pre></a></li>
+<li class="method public "><a href="#method_getCacheLocation" title="getCacheLocation :: "><span class="description">getCacheLocation()
+        </span><pre>getCacheLocation()</pre></a></li>
+<li class="method public "><a href="#method_getClassMap" title="getClassMap :: "><span class="description">getClassMap()
+        </span><pre>getClassMap()</pre></a></li>
+<li class="method public "><a href="#method_getInstance" title="getInstance :: Returns the instance of the Auto_Loader Singleton or instantiates a new one"><span class="description">Returns the instance of the Auto_Loader Singleton or instantiates a new one</span><pre>getInstance()</pre></a></li>
+<li class="method public "><a href="#method_ignore" title="ignore :: Adds a path to the ignore list"><span class="description">Adds a path to the ignore list</span><pre>ignore()</pre></a></li>
+<li class="method public "><a href="#method_includeClass" title="includeClass :: Attempts to include the requested class name if it doesn't already exist
+and is in our class map"><span class="description">Attempts to include the requested class name if it doesn't already exist
+and is in our class map</span><pre>includeClass()</pre></a></li>
+<li class="method public "><a href="#method_init" title="init :: initialises the class map"><span class="description">initialises the class map</span><pre>init()</pre></a></li>
+<li class="method public "><a href="#method_rebuild" title="rebuild :: rebuilds the class map"><span class="description">rebuilds the class map</span><pre>rebuild()</pre></a></li>
+<li class="method public "><a href="#method_saveToCache" title="saveToCache :: saves the class_map array to the cache_file"><span class="description">saves the class_map array to the cache_file</span><pre>saveToCache()</pre></a></li>
+<li class="method public "><a href="#method_setClassMap" title="setClassMap :: "><span class="description">setClassMap()
+        </span><pre>setClassMap()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_loadClassesFromFile" title="loadClassesFromFile :: Scans a file for classes"><span class="description">Scans a file for classes</span><pre>loadClassesFromFile()</pre></a></li>
+<li class="method protected "><a href="#method_loadFromCache" title="loadFromCache :: Loads the class map from the cache file"><span class="description">Loads the class map from the cache file</span><pre>loadFromCache()</pre></a></li>
+<li class="method protected "><a href="#method_mapFilesInDir" title="mapFilesInDir :: Scan a directory for file with an accepted extension and add them to the map."><span class="description">Scan a directory for file with an accepted extension and add them to the map.</span><pre>mapFilesInDir()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_cacheFile" title="$cacheFile :: "><span class="description">$cacheFile</span><pre>$cacheFile</pre></a></li>
+<li class="property protected "><a href="#property_classMap" title="$classMap :: "><span class="description">$classMap</span><pre>$classMap</pre></a></li>
+<li class="property protected "><a href="#property_fileExt" title="$fileExt :: "><span class="description">$fileExt</span><pre>$fileExt</pre></a></li>
+<li class="property protected "><a href="#property_ignore" title="$ignore :: "><span class="description">$ignore</span><pre>$ignore</pre></a></li>
+<li class="property protected "><a href="#property_instance" title="$instance :: "><span class="description">$instance</span><pre>$instance</pre></a></li>
+<li class="property protected "><a href="#property_rebuiltInThisExecution" title="$rebuiltInThisExecution :: "><span class="description">$rebuiltInThisExecution</span><pre>$rebuiltInThisExecution</pre></a></li>
+<li class="property protected "><a href="#property_reloadclassMap" title="$reloadclassMap :: "><span class="description">$reloadclassMap</span><pre>$reloadclassMap</pre></a></li>
+<li class="property protected "><a href="#property_rootDirectory" title="$rootDirectory :: "><span class="description">$rootDirectory</span><pre>$rootDirectory</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\AutoLoader"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/AutoLoader.html">AutoLoader</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">the autoloader class</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/lib.html">lib</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___clone"></a><div class="element clickable method public method___clone" data-toggle="collapse" data-target=".method___clone .collapse">
+<h2>__clone()
+        </h2>
+<pre>__clone() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_autoload"></a><div class="element clickable method public method_autoload" data-toggle="collapse" data-target=".method_autoload .collapse">
+<h2>This function is registered with the SPL</h2>
+<pre>autoload(string $className) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_expireCache"></a><div class="element clickable method public method_expireCache" data-toggle="collapse" data-target=".method_expireCache .collapse">
+<h2>expires the cache</h2>
+<pre>expireCache() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getCacheLocation"></a><div class="element clickable method public method_getCacheLocation" data-toggle="collapse" data-target=".method_getCacheLocation .collapse">
+<h2>getCacheLocation()
+        </h2>
+<pre>getCacheLocation() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getClassMap"></a><div class="element clickable method public method_getClassMap" data-toggle="collapse" data-target=".method_getClassMap .collapse">
+<h2>getClassMap()
+        </h2>
+<pre>getClassMap() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getInstance"></a><div class="element clickable method public method_getInstance" data-toggle="collapse" data-target=".method_getInstance .collapse">
+<h2>Returns the instance of the Auto_Loader Singleton or instantiates a new one</h2>
+<pre>getInstance($rootDirectory, $reloadClassmap, $fileExt) : <a href="../classes/AutoLoader.html">\AutoLoader</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$rootDirectory</h4></div>
+<div class="subelement argument"><h4>$reloadClassmap</h4></div>
+<div class="subelement argument"><h4>$fileExt</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/AutoLoader.html">\AutoLoader</a></code></div>
+</div></div>
+</div>
+<a id="method_ignore"></a><div class="element clickable method public method_ignore" data-toggle="collapse" data-target=".method_ignore .collapse">
+<h2>Adds a path to the ignore list</h2>
+<pre>ignore(string $path) : <a href="../classes/AutoLoader.html">\AutoLoader</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/AutoLoader.html">\AutoLoader</a></code></div>
+</div></div>
+</div>
+<a id="method_includeClass"></a><div class="element clickable method public method_includeClass" data-toggle="collapse" data-target=".method_includeClass .collapse">
+<h2>Attempts to include the requested class name if it doesn't already exist
+and is in our class map</h2>
+<pre>includeClass(string $className) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_init"></a><div class="element clickable method public method_init" data-toggle="collapse" data-target=".method_init .collapse">
+<h2>initialises the class map</h2>
+<pre>init() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_rebuild"></a><div class="element clickable method public method_rebuild" data-toggle="collapse" data-target=".method_rebuild .collapse">
+<h2>rebuilds the class map</h2>
+<pre>rebuild() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_saveToCache"></a><div class="element clickable method public method_saveToCache" data-toggle="collapse" data-target=".method_saveToCache .collapse">
+<h2>saves the class_map array to the cache_file</h2>
+<pre>saveToCache() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setClassMap"></a><div class="element clickable method public method_setClassMap" data-toggle="collapse" data-target=".method_setClassMap .collapse">
+<h2>setClassMap()
+        </h2>
+<pre>setClassMap(array $classMap) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$classMap</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_loadClassesFromFile"></a><div class="element clickable method protected method_loadClassesFromFile" data-toggle="collapse" data-target=".method_loadClassesFromFile .collapse">
+<h2>Scans a file for classes</h2>
+<pre>loadClassesFromFile(string $filepath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filepath</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_loadFromCache"></a><div class="element clickable method protected method_loadFromCache" data-toggle="collapse" data-target=".method_loadFromCache .collapse">
+<h2>Loads the class map from the cache file</h2>
+<pre>loadFromCache() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_mapFilesInDir"></a><div class="element clickable method protected method_mapFilesInDir" data-toggle="collapse" data-target=".method_mapFilesInDir .collapse">
+<h2>Scan a directory for file with an accepted extension and add them to the map.</h2>
+<pre>mapFilesInDir(string $dir) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method private method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct(string $rootDirectory, boolean $reloadClassmap, array $fileExt) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rootDirectory</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$reloadClassmap</h4>
+<code>boolean</code>
+</div>
+<div class="subelement argument">
+<h4>$fileExt</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_cacheFile"> </a><div class="element clickable property protected property_cacheFile" data-toggle="collapse" data-target=".property_cacheFile .collapse">
+<h2>$cacheFile</h2>
+<pre>$cacheFile </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_classMap"> </a><div class="element clickable property protected property_classMap" data-toggle="collapse" data-target=".property_classMap .collapse">
+<h2>$classMap</h2>
+<pre>$classMap </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_fileExt"> </a><div class="element clickable property protected property_fileExt" data-toggle="collapse" data-target=".property_fileExt .collapse">
+<h2>$fileExt</h2>
+<pre>$fileExt </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_ignore"> </a><div class="element clickable property protected property_ignore" data-toggle="collapse" data-target=".property_ignore .collapse">
+<h2>$ignore</h2>
+<pre>$ignore </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_instance"> </a><div class="element clickable property protected property_instance" data-toggle="collapse" data-target=".property_instance .collapse">
+<h2>$instance</h2>
+<pre>$instance </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_rebuiltInThisExecution"> </a><div class="element clickable property protected property_rebuiltInThisExecution" data-toggle="collapse" data-target=".property_rebuiltInThisExecution .collapse">
+<h2>$rebuiltInThisExecution</h2>
+<pre>$rebuiltInThisExecution </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_reloadclassMap"> </a><div class="element clickable property protected property_reloadclassMap" data-toggle="collapse" data-target=".property_reloadclassMap .collapse">
+<h2>$reloadclassMap</h2>
+<pre>$reloadclassMap </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_rootDirectory"> </a><div class="element clickable property protected property_rootDirectory" data-toggle="collapse" data-target=".property_rootDirectory .collapse">
+<h2>$rootDirectory</h2>
+<pre>$rootDirectory </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-10-24T20:22:43+01:00.<br></footer></div>
+</div>
+</body>
+</html>

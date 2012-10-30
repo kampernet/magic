@@ -1,0 +1,1632 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="css/template.css" rel="stylesheet" media="all">
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="js/bootstrap.js" type="text/javascript"></script><script src="js/template.js" type="text/javascript"></script><script src="js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="packages/app.filters.html"><i class="icon-folder-open"></i> app/filters</a></li>
+<li><a href="packages/app.model.html"><i class="icon-folder-open"></i> app/model</a></li>
+<li><a href="packages/app.model.listeners.html"><i class="icon-folder-open"></i> app/model/listeners</a></li>
+<li><a href="packages/lib.html"><i class="icon-folder-open"></i> lib</a></li>
+<li><a href="packages/lib.aspects.html"><i class="icon-folder-open"></i> lib/aspects</a></li>
+<li><a href="packages/lib.base.html"><i class="icon-folder-open"></i> lib/base</a></li>
+<li><a href="packages/lib.base.actions.html"><i class="icon-folder-open"></i> lib/base/actions</a></li>
+<li><a href="packages/lib.base.aspects.html"><i class="icon-folder-open"></i> lib/base/aspects</a></li>
+<li><a href="packages/lib.base.filters.html"><i class="icon-folder-open"></i> lib/base/filters</a></li>
+<li><a href="packages/lib.base.model.html"><i class="icon-folder-open"></i> lib/base/model</a></li>
+<li><a href="packages/lib.base.renderers.html"><i class="icon-folder-open"></i> lib/base/renderers</a></li>
+<li><a href="packages/lib.enums.html"><i class="icon-folder-open"></i> lib/enums</a></li>
+<li><a href="packages/lib.exceptions.html"><i class="icon-folder-open"></i> lib/exceptions</a></li>
+<li><a href="packages/lib.filters.html"><i class="icon-folder-open"></i> lib/filters</a></li>
+<li><a href="packages/lib.renderers.html"><i class="icon-folder-open"></i> lib/renderers</a></li>
+<li><a href="packages/lib.sessions.html"><i class="icon-folder-open"></i> lib/sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">153</span></a></li>
+<li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4"><ul class="side-nav nav nav-list">
+<li class="nav-header">Filter type</li>
+<li><div class="btn-group type-filter" data-toggle="buttons-checkbox">
+<button class="btn critical">Critical</button><button class="btn error">Error</button><button class="btn notice">Notice</button>
+</div></li>
+<li class="nav-header">Navigation</li>
+<li><a href="#app/filters/FilterManager.php"><i class="icon-file"></i>app/filters/FilterManager.php</a></li>
+<li><a href="#app/model/Index.php"><i class="icon-file"></i>app/model/Index.php</a></li>
+<li><a href="#app/model/listeners/IndexListener.php"><i class="icon-file"></i>app/model/listeners/IndexListener.php</a></li>
+<li><a href="#app/templates/index.phtml"><i class="icon-file"></i>app/templates/index.phtml</a></li>
+<li><a href="#bootstrap.php"><i class="icon-file"></i>bootstrap.php</a></li>
+<li><a href="#lib/AbstractRequest.php"><i class="icon-file"></i>lib/AbstractRequest.php</a></li>
+<li><a href="#lib/AnnotationsParser.php"><i class="icon-file"></i>lib/AnnotationsParser.php</a></li>
+<li><a href="#lib/Application.php"><i class="icon-file"></i>lib/Application.php</a></li>
+<li><a href="#lib/aspects/DataAccessAspect.php"><i class="icon-file"></i>lib/aspects/DataAccessAspect.php</a></li>
+<li><a href="#lib/aspects/RequestAspect.php"><i class="icon-file"></i>lib/aspects/RequestAspect.php</a></li>
+<li><a href="#lib/AutoLoader.php"><i class="icon-file"></i>lib/AutoLoader.php</a></li>
+<li><a href="#lib/base/actions/ActionChain.php"><i class="icon-file"></i>lib/base/actions/ActionChain.php</a></li>
+<li><a href="#lib/base/actions/Command.php"><i class="icon-file"></i>lib/base/actions/Command.php</a></li>
+<li><a href="#lib/base/actions/CommandInterface.php"><i class="icon-file"></i>lib/base/actions/CommandInterface.php</a></li>
+<li><a href="#lib/base/aspects/Aspect.php"><i class="icon-file"></i>lib/base/aspects/Aspect.php</a></li>
+<li><a href="#lib/base/aspects/AspectInterface.php"><i class="icon-file"></i>lib/base/aspects/AspectInterface.php</a></li>
+<li><a href="#lib/base/Delegator.php"><i class="icon-file"></i>lib/base/Delegator.php</a></li>
+<li><a href="#lib/base/Environment.php"><i class="icon-file"></i>lib/base/Environment.php</a></li>
+<li><a href="#lib/base/Event.php"><i class="icon-file"></i>lib/base/Event.php</a></li>
+<li><a href="#lib/base/filters/BaseFilter.php"><i class="icon-file"></i>lib/base/filters/BaseFilter.php</a></li>
+<li><a href="#lib/base/filters/FilterChainInterface.php"><i class="icon-file"></i>lib/base/filters/FilterChainInterface.php</a></li>
+<li><a href="#lib/base/Listener.php"><i class="icon-file"></i>lib/base/Listener.php</a></li>
+<li><a href="#lib/base/model/ConnectionManager.php"><i class="icon-file"></i>lib/base/model/ConnectionManager.php</a></li>
+<li><a href="#lib/base/model/ConnectionProvider.php"><i class="icon-file"></i>lib/base/model/ConnectionProvider.php</a></li>
+<li><a href="#lib/base/model/DataAccessInterface.php"><i class="icon-file"></i>lib/base/model/DataAccessInterface.php</a></li>
+<li><a href="#lib/base/model/DataModel.php"><i class="icon-file"></i>lib/base/model/DataModel.php</a></li>
+<li><a href="#lib/base/model/DataModelIterator.php"><i class="icon-file"></i>lib/base/model/DataModelIterator.php</a></li>
+<li><a href="#lib/base/model/DataRow.php"><i class="icon-file"></i>lib/base/model/DataRow.php</a></li>
+<li><a href="#lib/base/model/MySQLiDAO.php"><i class="icon-file"></i>lib/base/model/MySQLiDAO.php</a></li>
+<li><a href="#lib/base/Model.php"><i class="icon-file"></i>lib/base/Model.php</a></li>
+<li><a href="#lib/base/renderers/RenderInterface.php"><i class="icon-file"></i>lib/base/renderers/RenderInterface.php</a></li>
+<li><a href="#lib/Configuration.php"><i class="icon-file"></i>lib/Configuration.php</a></li>
+<li><a href="#lib/Cookies.php"><i class="icon-file"></i>lib/Cookies.php</a></li>
+<li><a href="#lib/enums/DatabaseTypeEnum.php"><i class="icon-file"></i>lib/enums/DatabaseTypeEnum.php</a></li>
+<li><a href="#lib/enums/EnvironmentEnum.php"><i class="icon-file"></i>lib/enums/EnvironmentEnum.php</a></li>
+<li><a href="#lib/EventListenerRegister.php"><i class="icon-file"></i>lib/EventListenerRegister.php</a></li>
+<li><a href="#lib/exceptions/NoSuchClassException.php"><i class="icon-file"></i>lib/exceptions/NoSuchClassException.php</a></li>
+<li><a href="#lib/exceptions/NoSuchMethodException.php"><i class="icon-file"></i>lib/exceptions/NoSuchMethodException.php</a></li>
+<li><a href="#lib/filters/CookiesFilter.php"><i class="icon-file"></i>lib/filters/CookiesFilter.php</a></li>
+<li><a href="#lib/filters/RenderFilter.php"><i class="icon-file"></i>lib/filters/RenderFilter.php</a></li>
+<li><a href="#lib/filters/RequestRoutingFilter.php"><i class="icon-file"></i>lib/filters/RequestRoutingFilter.php</a></li>
+<li><a href="#lib/filters/SessionFilter.php"><i class="icon-file"></i>lib/filters/SessionFilter.php</a></li>
+<li><a href="#lib/filters/SetRendererFilter.php"><i class="icon-file"></i>lib/filters/SetRendererFilter.php</a></li>
+<li><a href="#lib/renderers/JSONRenderer.php"><i class="icon-file"></i>lib/renderers/JSONRenderer.php</a></li>
+<li><a href="#lib/renderers/PHPRenderer.php"><i class="icon-file"></i>lib/renderers/PHPRenderer.php</a></li>
+<li><a href="#lib/renderers/XMLRenderer.php"><i class="icon-file"></i>lib/renderers/XMLRenderer.php</a></li>
+<li><a href="#lib/renderers/XSLTRenderer.php"><i class="icon-file"></i>lib/renderers/XSLTRenderer.php</a></li>
+<li><a href="#lib/Request.php"><i class="icon-file"></i>lib/Request.php</a></li>
+<li><a href="#lib/Response.php"><i class="icon-file"></i>lib/Response.php</a></li>
+<li><a href="#lib/scripts/rebuild-classmap.php"><i class="icon-file"></i>lib/scripts/rebuild-classmap.php</a></li>
+<li><a href="#lib/sessions/Session.php"><i class="icon-file"></i>lib/sessions/Session.php</a></li>
+<li><a href="#lib/sessions/SessionDefaultHandler.php"><i class="icon-file"></i>lib/sessions/SessionDefaultHandler.php</a></li>
+<li><a href="#lib/sessions/SessionHandlerInterface.php"><i class="icon-file"></i>lib/sessions/SessionHandlerInterface.php</a></li>
+<li><a href="#lib/sessions/SessionMemcacheHandler.php"><i class="icon-file"></i>lib/sessions/SessionMemcacheHandler.php</a></li>
+<li><a href="#lib/sessions/SessionMySQLiHandler.php"><i class="icon-file"></i>lib/sessions/SessionMySQLiHandler.php</a></li>
+</ul></div>
+<div class="span8">
+<ul class="breadcrumb">
+<li>
+<a href=""><i class="icon-remove-sign"></i></a><span class="divider">\</span>
+</li>
+<li>Compilation Errors</li>
+</ul>
+<div class="package-contents"></div>
+<div class="package-contents"></div>
+<div class="package-contents">
+<a name="app/filters/FilterManager.php" id="app/filters/FilterManager.php"></a><h3>
+<i class="icon-file"></i>app/filters/FilterManager.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file app/filters/FilterManager.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="app/model/Index.php" id="app/model/Index.php"></a><h3>
+<i class="icon-file"></i>app/model/Index.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file app/model/Index.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="app/model/listeners/IndexListener.php" id="app/model/listeners/IndexListener.php"></a><h3>
+<i class="icon-file"></i>app/model/listeners/IndexListener.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file app/model/listeners/IndexListener.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="app/templates/index.phtml" id="app/templates/index.phtml"></a><h3>
+<i class="icon-file"></i>app/templates/index.phtml<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file app/templates/index.phtml</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="bootstrap.php" id="bootstrap.php"></a><h3>
+<i class="icon-file"></i>bootstrap.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file bootstrap.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/AbstractRequest.php" id="lib/AbstractRequest.php"></a><h3>
+<i class="icon-file"></i>lib/AbstractRequest.php<small style="float: right;padding-right: 10px;">8</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/AbstractRequest.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>11</td>
+<td>No DocBlock was found for property $params</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>12</td>
+<td>No DocBlock was found for property $path</td>
+</tr>
+<tr class="critical">
+<td>critical</td>
+<td>13</td>
+<td>No short description for property $session</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>17</td>
+<td>No DocBlock was found for property $cookies</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>18</td>
+<td>No DocBlock was found for property $server</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>19</td>
+<td>No DocBlock was found for property $do</td>
+</tr>
+<tr class="critical">
+<td>critical</td>
+<td>20</td>
+<td>No short description for property $response</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/AnnotationsParser.php" id="lib/AnnotationsParser.php"></a><h3>
+<i class="icon-file"></i>lib/AnnotationsParser.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/AnnotationsParser.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>Argument $reflector is missing from the Docblock of getAnnotations()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/Application.php" id="lib/Application.php"></a><h3>
+<i class="icon-file"></i>lib/Application.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/Application.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>11</td>
+<td>No DocBlock was found for property $_instance</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>26</td>
+<td>No short description for method getInstance()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/aspects/DataAccessAspect.php" id="lib/aspects/DataAccessAspect.php"></a><h3>
+<i class="icon-file"></i>lib/aspects/DataAccessAspect.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/aspects/DataAccessAspect.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>8</td>
+<td>No short description for method injectConnection()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/aspects/RequestAspect.php" id="lib/aspects/RequestAspect.php"></a><h3>
+<i class="icon-file"></i>lib/aspects/RequestAspect.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/aspects/RequestAspect.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>8</td>
+<td>No short description for method injectRequest()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/AutoLoader.php" id="lib/AutoLoader.php"></a><h3>
+<i class="icon-file"></i>lib/AutoLoader.php<small style="float: right;padding-right: 10px;">17</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/AutoLoader.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No DocBlock was found for property $rootDirectory</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>No DocBlock was found for property $classMap</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>11</td>
+<td>No DocBlock was found for property $reloadclassMap</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>12</td>
+<td>No DocBlock was found for property $fileExt</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>13</td>
+<td>No DocBlock was found for property $instance</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>14</td>
+<td>No DocBlock was found for property $cacheFile</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>15</td>
+<td>No DocBlock was found for property $ignore</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>16</td>
+<td>No DocBlock was found for property $rebuiltInThisExecution</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>18</td>
+<td>No short description for method __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>53</td>
+<td>Argument $rootDirectory is missing from the Docblock of getInstance()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>53</td>
+<td>Argument $reloadClassmap is missing from the Docblock of getInstance()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>53</td>
+<td>Argument $fileExt is missing from the Docblock of getInstance()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>79</td>
+<td>No short description for method getCacheLocation()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>86</td>
+<td>No short description for method getClassMap()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>93</td>
+<td>No short description for method setClassMap()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>249</td>
+<td>No DocBlock was found for method __clone()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/actions/ActionChain.php" id="lib/base/actions/ActionChain.php"></a><h3>
+<i class="icon-file"></i>lib/base/actions/ActionChain.php<small style="float: right;padding-right: 10px;">4</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/actions/ActionChain.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No DocBlock was found for property $index</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>No DocBlock was found for property $items</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>52</td>
+<td>Argument $request is missing from the Docblock of execute()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/actions/Command.php" id="lib/base/actions/Command.php"></a><h3>
+<i class="icon-file"></i>lib/base/actions/Command.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/actions/Command.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/actions/CommandInterface.php" id="lib/base/actions/CommandInterface.php"></a><h3>
+<i class="icon-file"></i>lib/base/actions/CommandInterface.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/actions/CommandInterface.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/aspects/Aspect.php" id="lib/base/aspects/Aspect.php"></a><h3>
+<i class="icon-file"></i>lib/base/aspects/Aspect.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/aspects/Aspect.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>80</td>
+<td>No short description for method createInstance()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/aspects/AspectInterface.php" id="lib/base/aspects/AspectInterface.php"></a><h3>
+<i class="icon-file"></i>lib/base/aspects/AspectInterface.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/aspects/AspectInterface.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/Delegator.php" id="lib/base/Delegator.php"></a><h3>
+<i class="icon-file"></i>lib/base/Delegator.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/Delegator.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>14</td>
+<td>No DocBlock was found for property $_properties</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/Environment.php" id="lib/base/Environment.php"></a><h3>
+<i class="icon-file"></i>lib/base/Environment.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/Environment.php</td>
+</tr>
+<tr class="critical">
+<td>critical</td>
+<td>11</td>
+<td>No short description for property $_instance</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>40</td>
+<td>No short description for method getEnvironment()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/Event.php" id="lib/base/Event.php"></a><h3>
+<i class="icon-file"></i>lib/base/Event.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/Event.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No DocBlock was found for property $events</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/filters/BaseFilter.php" id="lib/base/filters/BaseFilter.php"></a><h3>
+<i class="icon-file"></i>lib/base/filters/BaseFilter.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/filters/BaseFilter.php</td>
+</tr>
+<tr class="critical">
+<td>critical</td>
+<td>9</td>
+<td>No short description for property $request</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>15</td>
+<td>The type hint of the argument is incorrect for the type definition of the @param tag with argument $request in __construct()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/filters/FilterChainInterface.php" id="lib/base/filters/FilterChainInterface.php"></a><h3>
+<i class="icon-file"></i>lib/base/filters/FilterChainInterface.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/filters/FilterChainInterface.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No DocBlock was found for method __construct()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/Listener.php" id="lib/base/Listener.php"></a><h3>
+<i class="icon-file"></i>lib/base/Listener.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/Listener.php</td>
+</tr>
+<tr class="critical">
+<td>critical</td>
+<td>9</td>
+<td>No short description for property $model</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/model/ConnectionManager.php" id="lib/base/model/ConnectionManager.php"></a><h3>
+<i class="icon-file"></i>lib/base/model/ConnectionManager.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/model/ConnectionManager.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>11</td>
+<td>No DocBlock was found for property $_instance</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>12</td>
+<td>No DocBlock was found for property $connections</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/model/ConnectionProvider.php" id="lib/base/model/ConnectionProvider.php"></a><h3>
+<i class="icon-file"></i>lib/base/model/ConnectionProvider.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/model/ConnectionProvider.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/model/DataAccessInterface.php" id="lib/base/model/DataAccessInterface.php"></a><h3>
+<i class="icon-file"></i>lib/base/model/DataAccessInterface.php<small style="float: right;padding-right: 10px;">9</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/model/DataAccessInterface.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No short description for method __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>16</td>
+<td>No short description for method save()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>21</td>
+<td>No short description for method delete()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>26</td>
+<td>No short description for method fetch()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>31</td>
+<td>No short description for method query()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>38</td>
+<td>No short description for method setKeys()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>43</td>
+<td>No short description for method quote()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>47</td>
+<td>No short description for method escape()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/model/DataModel.php" id="lib/base/model/DataModel.php"></a><h3>
+<i class="icon-file"></i>lib/base/model/DataModel.php<small style="float: right;padding-right: 10px;">16</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/model/DataModel.php</td>
+</tr>
+<tr class="critical">
+<td>critical</td>
+<td>9</td>
+<td>No short description for property $dao</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>13</td>
+<td>No DocBlock was found for property $className</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>14</td>
+<td>No DocBlock was found for property $keys</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>16</td>
+<td>No DocBlock was found for property $_table</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>47</td>
+<td>No short description for method setDAO()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>56</td>
+<td>No short description for method getDAO()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>76</td>
+<td>Parameter $o could not be found in save()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>85</td>
+<td>Parameter $o could not be found in delete()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>131</td>
+<td>No short description for method getKeys()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>161</td>
+<td>No DocBlock was found for method onBeforeSave()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>162</td>
+<td>No DocBlock was found for method onAfterSave()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>163</td>
+<td>No DocBlock was found for method onBeforeDelete()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>164</td>
+<td>No DocBlock was found for method onAfterDelete()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>165</td>
+<td>No DocBlock was found for method onBeforeFetch()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>166</td>
+<td>No DocBlock was found for method onAfterFetch()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/model/DataModelIterator.php" id="lib/base/model/DataModelIterator.php"></a><h3>
+<i class="icon-file"></i>lib/base/model/DataModelIterator.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/model/DataModelIterator.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No DocBlock was found for property $index</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>No DocBlock was found for property $items</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/model/DataRow.php" id="lib/base/model/DataRow.php"></a><h3>
+<i class="icon-file"></i>lib/base/model/DataRow.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/model/DataRow.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/model/MySQLiDAO.php" id="lib/base/model/MySQLiDAO.php"></a><h3>
+<i class="icon-file"></i>lib/base/model/MySQLiDAO.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/model/MySQLiDAO.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>10</td>
+<td>No DocBlock was found for property $conn</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/Model.php" id="lib/base/Model.php"></a><h3>
+<i class="icon-file"></i>lib/base/Model.php<small style="float: right;padding-right: 10px;">10</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/Model.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No DocBlock was found for property $_properties</td>
+</tr>
+<tr class="critical">
+<td>critical</td>
+<td>10</td>
+<td>No short description for property $request</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>14</td>
+<td>No DocBlock was found for property $originalClassName</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>16</td>
+<td>No short description for method __default()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>23</td>
+<td>No short description for method __call()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>52</td>
+<td>No short description for method setRequest()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>60</td>
+<td>No short description for method getRequest()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>67</td>
+<td>No short description for method setOriginalClassName()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>74</td>
+<td>No short description for method getOriginalClassName()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/base/renderers/RenderInterface.php" id="lib/base/renderers/RenderInterface.php"></a><h3>
+<i class="icon-file"></i>lib/base/renderers/RenderInterface.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/base/renderers/RenderInterface.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/Configuration.php" id="lib/Configuration.php"></a><h3>
+<i class="icon-file"></i>lib/Configuration.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/Configuration.php</td>
+</tr>
+<tr class="critical">
+<td>critical</td>
+<td>11</td>
+<td>No short description for property $_instance</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/Cookies.php" id="lib/Cookies.php"></a><h3>
+<i class="icon-file"></i>lib/Cookies.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/Cookies.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>89</td>
+<td>Argument $path is missing from the Docblock of unsetCookie()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>89</td>
+<td>Argument $domain is missing from the Docblock of unsetCookie()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/enums/DatabaseTypeEnum.php" id="lib/enums/DatabaseTypeEnum.php"></a><h3>
+<i class="icon-file"></i>lib/enums/DatabaseTypeEnum.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/enums/DatabaseTypeEnum.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/enums/EnvironmentEnum.php" id="lib/enums/EnvironmentEnum.php"></a><h3>
+<i class="icon-file"></i>lib/enums/EnvironmentEnum.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/enums/EnvironmentEnum.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/EventListenerRegister.php" id="lib/EventListenerRegister.php"></a><h3>
+<i class="icon-file"></i>lib/EventListenerRegister.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/EventListenerRegister.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/exceptions/NoSuchClassException.php" id="lib/exceptions/NoSuchClassException.php"></a><h3>
+<i class="icon-file"></i>lib/exceptions/NoSuchClassException.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/exceptions/NoSuchClassException.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/exceptions/NoSuchMethodException.php" id="lib/exceptions/NoSuchMethodException.php"></a><h3>
+<i class="icon-file"></i>lib/exceptions/NoSuchMethodException.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/exceptions/NoSuchMethodException.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/filters/CookiesFilter.php" id="lib/filters/CookiesFilter.php"></a><h3>
+<i class="icon-file"></i>lib/filters/CookiesFilter.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/filters/CookiesFilter.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/filters/RenderFilter.php" id="lib/filters/RenderFilter.php"></a><h3>
+<i class="icon-file"></i>lib/filters/RenderFilter.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/filters/RenderFilter.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/filters/RequestRoutingFilter.php" id="lib/filters/RequestRoutingFilter.php"></a><h3>
+<i class="icon-file"></i>lib/filters/RequestRoutingFilter.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/filters/RequestRoutingFilter.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/filters/SessionFilter.php" id="lib/filters/SessionFilter.php"></a><h3>
+<i class="icon-file"></i>lib/filters/SessionFilter.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/filters/SessionFilter.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/filters/SetRendererFilter.php" id="lib/filters/SetRendererFilter.php"></a><h3>
+<i class="icon-file"></i>lib/filters/SetRendererFilter.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/filters/SetRendererFilter.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>33</td>
+<td>No short description for method lookupRenderer()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/renderers/JSONRenderer.php" id="lib/renderers/JSONRenderer.php"></a><h3>
+<i class="icon-file"></i>lib/renderers/JSONRenderer.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/renderers/JSONRenderer.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>No DocBlock was found for method render()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/renderers/PHPRenderer.php" id="lib/renderers/PHPRenderer.php"></a><h3>
+<i class="icon-file"></i>lib/renderers/PHPRenderer.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/renderers/PHPRenderer.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>Argument $response is missing from the Docblock of render()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/renderers/XMLRenderer.php" id="lib/renderers/XMLRenderer.php"></a><h3>
+<i class="icon-file"></i>lib/renderers/XMLRenderer.php<small style="float: right;padding-right: 10px;">5</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/renderers/XMLRenderer.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>12</td>
+<td>Argument $response is missing from the Docblock of render()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>23</td>
+<td>Name of argument $tag does not match with the DocBlock's name $destroy_original in append_to()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>23</td>
+<td>Argument $response is missing from the Docblock of append_to()</td>
+</tr>
+<tr class="notice">
+<td>notice</td>
+<td>23</td>
+<td>Parameter $destroy_original could not be found in append_to()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/renderers/XSLTRenderer.php" id="lib/renderers/XSLTRenderer.php"></a><h3>
+<i class="icon-file"></i>lib/renderers/XSLTRenderer.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/renderers/XSLTRenderer.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>9</td>
+<td>Argument $response is missing from the Docblock of render()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/Request.php" id="lib/Request.php"></a><h3>
+<i class="icon-file"></i>lib/Request.php<small style="float: right;padding-right: 10px;">4</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/Request.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>11</td>
+<td>No DocBlock was found for property $_instance</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>13</td>
+<td>No DocBlock was found for method __construct()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>36</td>
+<td>No short description for method getInstance()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/Response.php" id="lib/Response.php"></a><h3>
+<i class="icon-file"></i>lib/Response.php<small style="float: right;padding-right: 10px;">6</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/Response.php</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>12</td>
+<td>No DocBlock was found for property $data</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>13</td>
+<td>No DocBlock was found for property $messages</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>14</td>
+<td>No DocBlock was found for property $renderer</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>16</td>
+<td>No DocBlock was found for method setRenderer()</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>20</td>
+<td>No DocBlock was found for method getRenderer()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/scripts/rebuild-classmap.php" id="lib/scripts/rebuild-classmap.php"></a><h3>
+<i class="icon-file"></i>lib/scripts/rebuild-classmap.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/scripts/rebuild-classmap.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/sessions/Session.php" id="lib/sessions/Session.php"></a><h3>
+<i class="icon-file"></i>lib/sessions/Session.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/sessions/Session.php</td>
+</tr>
+<tr class="critical">
+<td>critical</td>
+<td>14</td>
+<td>No short description for property $_instance</td>
+</tr>
+<tr class="error">
+<td>error</td>
+<td>51</td>
+<td>No short description for method setHandler()</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/sessions/SessionDefaultHandler.php" id="lib/sessions/SessionDefaultHandler.php"></a><h3>
+<i class="icon-file"></i>lib/sessions/SessionDefaultHandler.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/sessions/SessionDefaultHandler.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/sessions/SessionHandlerInterface.php" id="lib/sessions/SessionHandlerInterface.php"></a><h3>
+<i class="icon-file"></i>lib/sessions/SessionHandlerInterface.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/sessions/SessionHandlerInterface.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/sessions/SessionMemcacheHandler.php" id="lib/sessions/SessionMemcacheHandler.php"></a><h3>
+<i class="icon-file"></i>lib/sessions/SessionMemcacheHandler.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/sessions/SessionMemcacheHandler.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/sessions/SessionMySQLiHandler.php" id="lib/sessions/SessionMySQLiHandler.php"></a><h3>
+<i class="icon-file"></i>lib/sessions/SessionMySQLiHandler.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<thead><tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr></thead>
+<tbody><tr class="error">
+<td>error</td>
+<td>0</td>
+<td>No page-level DocBlock was found in file lib/sessions/SessionMySQLiHandler.php</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="package-contents"></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
+            generated on 2012-10-24T20:22:44+01:00.<br></footer></div>
+</div>
+</body>
+</html>

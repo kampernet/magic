@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- you can make url to class / method mappings for urls of choice -->
+<!DOCTYPE application
+	SYSTEM "application.dtd">
+<application>
+<!--
+	* this is the format for custom uri mapping.
+	* class is the model object and method is the method to run
+	* eg: uri="users" class="User" method="__default"
+	   
+	<actions>
+		<action uri="" class="" method="" />
+	</actions>
+	
+	* this is the format for loading up listeners 
+	* eg: listenFor="User::onBeforeAnExampleMethod" listenerMethod="helloWorld" 
+	* will run UserListener->helloWorld ( the listener object will have the model object as a property )  
+	* BEFORE User->anExampleMethod is run
+
+	<listeners>
+		<listener listenFor="" listenerMethod="" />
+	</listeners>
+-->
+	<listeners>
+		<listener listenFor="Index::onBefore__default" listenerMethod="thisIsAnExample" />
+	</listeners>
+</application>

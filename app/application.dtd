@@ -1,0 +1,12 @@
+<!ELEMENT application (actions*,listeners*)>
+<!ELEMENT actions (action*)>
+<!ELEMENT action (param*)>
+<!ELEMENT param EMPTY>
+<!ATTLIST action
+	uri CDATA #REQUIRED
+	class CDATA #REQUIRED
+	method CDATA #REQUIRED>
+<!ELEMENT listeners (listener*)>
+<!ATTLIST listener
+	listenFor CDATA #REQUIRED
+	listenerMethod CDATA #REQUIRED>
