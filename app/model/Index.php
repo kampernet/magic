@@ -7,7 +7,10 @@
  * use the model annotation for any object properties 
  * if you want to inject dependencies ( MDA / Object Graph / DI ) 
  * 
- * @has Request, DataAccess
+ * NOTE: you can use a comma separated list of Aspects this Model has
+ * eg: has Request, DataAccess
+ * 
+ * @has Request
  * @package app/model
  */
 class Index extends Model {
