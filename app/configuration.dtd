@@ -1,0 +1,15 @@
+<!ELEMENT configuration (environment*, constants*)>
+<!ELEMENT environment (database)>
+<!ELEMENT database EMPTY>
+<!ATTLIST database
+	role CDATA #REQUIRED
+	class CDATA #REQUIRED
+	host CDATA #REQUIRED
+	name CDATA #REQUIRED
+	user CDATA #REQUIRED
+	pass CDATA #REQUIRED>
+<!ELEMENT constants (constant*)>
+<!ELEMENT constant EMPTY>
+<!ATTLIST constant
+	name CDATA #REQUIRED
+	value CDATA #REQUIRED>

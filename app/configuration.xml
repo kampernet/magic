@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application
+	SYSTEM "configuration.dtd">
 <config>
 	<environment>
 		<database role="master" class="MySQLiDAO" host="127.0.0.1" name="magic" user="root" pass="" />
