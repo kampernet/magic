@@ -29,7 +29,7 @@ class FilterManager {
 	 * @param AbstractRequest $request
 	 */
 	public static function applyPostFilters(AbstractRequest &$request) {
-		new RenderFilter($request);
+		
 	}
 	
 }

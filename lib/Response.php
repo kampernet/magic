@@ -9,6 +9,7 @@
  * @package lib
  */
 class Response {
+	
 	public $data = array();
 	public $messages;
 	private $renderer;
@@ -28,6 +29,14 @@ class Response {
 	 */
 	public function render() {
 		return $this->renderer->render($this);
+	}
+	
+	/**
+	 * send any headers
+	 * @return void
+	 */
+	public function sendHeaders() {
+		$this->renderer->sendHeaders($this);
 	}
 	
 	/**

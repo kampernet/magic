@@ -6,8 +6,15 @@
  */
 interface RenderInterface {
 	/**
-	 * process the response
+	 * render the response
 	 * @param Response $response
+	 * @return string
 	 */
 	public function render(Response $response);
+	/**
+	 * send appropriate headers
+	 * @param Response $response
+	 * @return void
+	 */
+	public function sendHeaders(Response $response);
 }

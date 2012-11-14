@@ -8,6 +8,15 @@ class XSLTRenderer implements RenderInterface {
 	
 	/**
 	 * (non-PHPdoc)
+	 * @see RenderInterface::sendHeaders()
+	 */
+	public function sendHeaders(Response $response) {
+		header("Cache-Control: no-cache, must-revalidate");
+		header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");		
+	}
+	
+	/**
+	 * (non-PHPdoc)
 	 * @see RenderInterface::render()
 	 */
 	public function render(Response $response) { 
@@ -26,8 +35,6 @@ class XSLTRenderer implements RenderInterface {
 		$proc = new XSLTProcessor;
 		$proc->importStyleSheet($xsl);
 		
-		header("Cache-Control: no-cache, must-revalidate");
-		header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
-		echo $proc->transformToXML($xml);
+		return $proc->transformToXML($xml);
 	}
 }

@@ -21,3 +21,6 @@ try {
 } catch(Exception $e) {
 	
 }
+
+Request::getInstance()->response->sendHeaders();
+echo Request::getInstance()->response->render();

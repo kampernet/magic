@@ -6,10 +6,21 @@
  */
 class JSONRenderer implements RenderInterface {
 	
-	public function render(Response $response) { 
+	/**
+	 * (non-PHPdoc)
+	 * @see RenderInterface::sendHeaders()
+	 */
+	public function sendHeaders(Response $response) {
 		header("Content-Type: text/javascript");
 		header("Cache-Control: no-cache, must-revalidate");
 		header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
-		echo json_encode($response);
+	}
+	
+	/**
+	 * (non-PHPdoc)
+	 * @see RenderInterface::render()
+	 */
+	public function render(Response $response) { 
+		return json_encode($response);
 	}
 }

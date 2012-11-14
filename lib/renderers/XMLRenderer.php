@@ -11,13 +11,20 @@ class XMLRenderer implements RenderInterface {
 	
 	/**
 	 * (non-PHPdoc)
-	 * @see RenderInterface::render()
+	 * @see RenderInterface::sendHeaders()
 	 */
-	public function render(Response $response) {
+	public function sendHeaders(Response $response) {
 		header("Content-Type: text/xml");
 		header("Cache-Control: no-cache, must-revalidate");
 		header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
-		echo $this->to_domdocument($response)->saveXML();
+	}
+	
+	/**
+	 * (non-PHPdoc)
+	 * @see RenderInterface::render()
+	 */
+	public function render(Response $response) {
+		return $this->to_domdocument($response)->saveXML();
 	}
 
 	/**

@@ -5,7 +5,7 @@
 	</environment>
 	<constants>
 		<constant name="environment" value="dev" />
-	 	<!-- <constant name="renderer" value="XSLTRenderer" /> -->
+	 	<!-- <constant name="renderer" value="XSLTRenderer" /> --> 
 		<constant name="templates" value="../../app/templates/" /> 
 	</constants>
 </config>
