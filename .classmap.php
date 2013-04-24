@@ -5,6 +5,7 @@
  */
 AutoLoader::getInstance()->setClassMap(array (
   'filtermanager' => 'app/filters/FilterManager.php',
+  'example' => 'app/model/Example.php',
   'index' => 'app/model/Index.php',
   'indexlistener' => 'app/model/listeners/IndexListener.php',
   'abstractrequest' => 'lib/AbstractRequest.php',

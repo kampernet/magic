@@ -9,7 +9,7 @@
 class IndexListener extends Listener {
 	
 	/**
-	 * just do demonstrate how listners hook in
+	 * just do demonstrate how listeners hook in
 	 */
 	public function thisIsAnExample() {
 		$this->model->getRequest()->params['pow'] = 'hello from IndexListener';

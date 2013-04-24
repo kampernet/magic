@@ -17,9 +17,9 @@ class Delegator {
 	 * the master method.  delegate the request 
 	 * to the right class method with parameters.
 	 * returns the result of the method call
-	 *  
+	 *
 	 * @param AbstractRequest $request
-	 * @return $result 
+	 * @return mixed
 	 */
 	public function delegate(AbstractRequest $request) { 
 		
@@ -107,7 +107,7 @@ class Delegator {
 		// get the aspects this object has
 		$c = new ReflectionClass($classname);
 		$info = AnnotationsParser::getAnnotations($c);
-		
+		$aspects = null;
 		if (array_key_exists('has', $info)) {
 			$aspects = explode(",", $info['has']);
 			foreach($aspects as &$aspect) {

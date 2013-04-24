@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE application
-	SYSTEM "configuration.dtd">
+<!DOCTYPE config [
+        <!ELEMENT config (environment|constants)*>
+        <!ELEMENT environment (database)*>
+        <!ELEMENT database (#PCDATA)>
+        <!ATTLIST database
+                role CDATA #REQUIRED
+                class CDATA #REQUIRED
+                host CDATA #REQUIRED
+                name CDATA #REQUIRED
+                user CDATA #REQUIRED
+                pass CDATA #REQUIRED>
+        <!ELEMENT constants (constant)*>
+        <!ELEMENT constant (#PCDATA)>
+        <!ATTLIST constant
+                name CDATA #REQUIRED
+                value CDATA #REQUIRED>
+        ]>
 <config>
+	<!-- 
+	TODO: make it like <environment name="dev" rootFolderName="magic.local">
+	then make the app aware of what environment it's running on
+	based on path to code folder name ( rootFolderName )
+	
+	have constants and environment variables separate.
+	 -->
 	<environment>
 		<database role="master" class="MySQLiDAO" host="127.0.0.1" name="magic" user="root" pass="" />
 	</environment>
 	<constants>
 		<constant name="environment" value="dev" />
-	 	<!-- <constant name="renderer" value="XSLTRenderer" /> --> 
+	 	<!-- <constant name="renderer" value="XSLTRenderer" /> -->
 		<constant name="templates" value="../../app/templates/" /> 
 	</constants>
 </config>
