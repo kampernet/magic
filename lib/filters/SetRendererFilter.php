@@ -7,20 +7,26 @@
 class SetRendererFilter extends BaseFilter {
 
 	/**
-	 * TODO parse the extension instead of a new path part.
-	 * (non-PHPdoc)
+	 * Sets the renderer for the request's response
+	 *
 	 * @see FilterChainInterface::applyFilter()
 	 */
 	public function applyFilter() {
-		if (isset($this->request->path[0])) {
-			switch ($this->request->path[0]) {
+
+		$last = end($this->request->path);
+
+		if (isset($last) && strstr($last, ".")) {
+			$info = explode(".", $last);
+			$replace = $info[0];
+			$extension = $info[1];
+			switch ($extension) {
 				case "json":
 					$this->request->response->setRenderer(new JSONRenderer());
-					array_shift($this->request->path);
+					$this->request->path[count($this->request->path) - 1] = $replace;
 					break;
 				case "xml":
 					$this->request->response->setRenderer(new XMLRenderer());
-					array_shift($this->request->path);
+					$this->request->path[count($this->request->path) - 1] = $replace;
 					break;
 				default:
 					$this->request->response->setRenderer($this->lookupRenderer());
