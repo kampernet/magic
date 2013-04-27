@@ -7,6 +7,7 @@
 class SetRendererFilter extends BaseFilter {
 
 	/**
+	 * TODO parse the extension instead of a new path part.
 	 * (non-PHPdoc)
 	 * @see FilterChainInterface::applyFilter()
 	 */

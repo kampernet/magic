@@ -1,9 +1,9 @@
-<html>
-	<head>
-		<title>Ola from PHP</title>
-	</head>
-	<body>
-		<p>hello from PHP</p>
-		<?php var_dump($response);?>
-	</body>
-</html>
+<?php
+/**
+ * @var Response $response
+ */
+?>
+<?php include "header.phtml";?>
+	<p>hello from PHP</p>
+	<?php var_dump($response);?>
+<?php include "footer.phtml";?>

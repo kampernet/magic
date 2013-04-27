@@ -49,6 +49,7 @@ class Environment {
 	/**
 	 * magic get impl for constants
 	 * @param string $name
+	 * @return null|string
 	 */
 	public function __get($name) {
 		$const = Configuration::getInstance()->constants->xpath("constant[@name='$name']");

@@ -46,11 +46,11 @@ abstract class DataModel {
 
 	/**
 	 * @param DataAccessInterface $dao
-	 * @return array
+	 * @return void
 	 */
 	public function setDAO(DataAccessInterface $dao) {
 		$this->dao = $dao;
-		return $this->setKeys();
+		$this->setKeys();
 	}
 	
 	/**
@@ -75,8 +75,8 @@ abstract class DataModel {
 	
 	/**
 	 * saves the model object
-	 * @param DataModel $o
-	 * @return DataModel 
+	 *
+	 * @return DataModel|null
 	 */
 	public function save() {
 		return ($this->dao) ? $this->dao->save($this) : null;
@@ -84,8 +84,8 @@ abstract class DataModel {
 	
 	/**
 	 * deletes the model object
-	 * @param DataModel $o
-	 * @return DataModel
+	 *
+	 * @return DataModel|null
 	 */
 	public function delete() {
 		return ($this->dao) ? $this->dao->delete($this) : null;
@@ -140,7 +140,7 @@ abstract class DataModel {
 	 * @return string
 	 */
 	public function getTableName() {
-		if ($this->_table !== null) { 
+		if ($this->_table !== null) {
 			return $this->_table;
 		}
 		return $this->getClassName();

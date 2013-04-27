@@ -9,7 +9,7 @@
  * 
  * NOTE: you can use a comma separated list of Aspects this Model has
  * eg: has Request, DataAccess
- * 
+ *
  * @has Request
  * @package app/model
  */

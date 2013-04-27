@@ -26,7 +26,7 @@ class Delegator {
 		$args = (isset($request->params)) ? $request->params : array();
 		$method = array_pop($request->path);
 		$thing = implode('', $request->path);
-		
+
 		// convert classname
 		$classname_parts = explode('-', $thing);
 		foreach($classname_parts as &$part) $part = ucfirst($part);
@@ -36,7 +36,7 @@ class Delegator {
 		$x = explode("-", $method);
 		for($i=1; $i<count($x); $i++) $x[$i] = ucfirst($x[$i]);
 		$method = implode('', $x);
-		
+
 		Event::run($classname.'::onBefore'.ucfirst($method));
 		$result = call_user_func_array(array($this->$classname, $method), $args);
 		Event::run($classname.'::onAfter'.ucfirst($method));
@@ -100,7 +100,7 @@ class Delegator {
 	 * aspects the instance as per is has annotations
 	 * 
 	 * @param string $classname
-	 * @return Ambigous <Aspect, Aspect>
+	 * @return Aspect
 	 */
 	private function getAspectedInstance($classname) {
 

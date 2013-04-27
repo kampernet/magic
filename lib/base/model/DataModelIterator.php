@@ -18,9 +18,11 @@ class DataModelIterator implements Iterator, Countable {
 
     /**
      * reset the index and return the first element
-     * @return Ambigous <NULL, DataModel>
-     */
-    public function first() {
+     *
+     * @see Iterator::first
+	 * @return mixed|null
+	 */
+	public function first() {
     	$this->rewind();
     	return $this->current();
     }

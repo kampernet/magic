@@ -20,11 +20,12 @@ class MySQLiDAO implements DataAccessInterface {
 	public function __construct($host, $user, $pass, $db) { 
 		$this->connect($host, $user, $pass, $db);
 	}
-	
+
 	/**
 	 * saves the instance of the object to the database
-	 * 
+	 *
 	 * @param DataModel $o
+	 * @throws Exception
 	 * @return DataModel
 	 */
 	public function save(DataModel $o) {
@@ -63,7 +64,7 @@ class MySQLiDAO implements DataAccessInterface {
 				$sql .= "{$this->quote()}$column{$this->quote()} = VALUES({$this->quote()}$column{$this->quote()}), ";
 			}
 			$sql = substr($sql, 0, -2);
-			
+
 			if (!$stmt = $this->conn->prepare($sql)) {
 	            throw new Exception('Please check your sql statement : unable to prepare');
 			}
@@ -92,11 +93,12 @@ class MySQLiDAO implements DataAccessInterface {
 
 		return $o;
 	}
-	
+
 	/**
 	 * performs a delete on the table based on the datamodel object passed in
-	 * 
+	 *
 	 * @param DataModel $o
+	 * @throws Exception
 	 * @return DataModel
 	 */
 	public function delete(DataModel $o) { 
@@ -236,17 +238,18 @@ class MySQLiDAO implements DataAccessInterface {
 
 		return $obj;
 	}
-	
+
 	/**
-	 * if params are passed in, as an array of values, sql gets executed as 
-	 * a prepared statement.  if a DataModel is passed in 
+	 * if params are passed in, as an array of values, sql gets executed as
+	 * a prepared statement.  if a DataModel is passed in
 	 * it returns a DataModelIterator of DataModel objects.
-	 * otherwise, it returns the results of the query as an 
+	 * otherwise, it returns the results of the query as an
 	 * associative array
-	 * 
+	 *
 	 * @param string $sql
 	 * @param array $params
 	 * @param DataModel $o
+	 * @throws Exception
 	 * @return mixed array or DataModelIterator
 	 */
 	public function query($sql, $params = null, DataModel $o = null) {
@@ -255,7 +258,7 @@ class MySQLiDAO implements DataAccessInterface {
 		
 		if (!$params) {
 			if ($result = $this->conn->query($sql)) {
-				if ($result !== true) { 
+				if ($result !== true) {
 					while ($row = $result->fetch_assoc()) {
 						array_push($results, $row);
 					}

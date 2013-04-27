@@ -29,9 +29,10 @@ class XMLRenderer implements RenderInterface {
 
 	/**
 	 * appends nodes to the dom
-	 * 
+	 *
 	 * @param DOMNode $node
-	 * @param boolean $destroy_original
+	 * @param null $tag
+	 * @param Response $response
 	 * @return void
 	 */
 	private function append_to(DOMNode $node, $tag = null, Response $response){

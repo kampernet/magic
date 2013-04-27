@@ -49,9 +49,9 @@ class Session {
 	}
 	
 	/**
-	 * @param SessionHandlerInterface $handler
+	 * @param SessionInterface $handler
 	 */
-	public function setHandler(SessionHandlerInterface $handler) {
+	public function setHandler(SessionInterface $handler) {
 		$this->handler = $handler;
 	}
 	
@@ -63,7 +63,7 @@ class Session {
 		if ($this->state == self::SESSION_NOT_STARTED) {
 			if (!isset($this->handler)) {
 				// defaults to default handler
-				$this->handler = new SessionDefaultHandler();
+				$this->handler = new SessionDefault();
 			}
 			$this->handler->start();
 			$this->state = self::SESSION_STARTED;
@@ -95,6 +95,7 @@ class Session {
 	/**
 	 * checks the session property
 	 * @param string $name
+	 * @return bool
 	 */
 	public function __isset($name) {
 		$this->start();

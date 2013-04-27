@@ -14,7 +14,9 @@ require_once ROOT_PATH . "lib/AutoLoader.php";
 
 $autoLoader = AutoLoader::getInstance(ROOT_PATH, true);
 $autoLoader->expireCache();
-$autoLoader->ignore(realpath(__DIR__ . '/../../')."/app/templates");
+$autoLoader->ignore(realpath(__DIR__ . '/../../')."/app/templates")
+	->ignore(realpath(__DIR__ . '/../../')."/docs")
+	->ignore(realpath(__DIR__ . '/../../')."/www");
 $autoLoader->init();
 
 // correct the generated file paths

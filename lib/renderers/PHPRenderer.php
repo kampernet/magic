@@ -27,10 +27,12 @@ class PHPRenderer implements RenderInterface {
 	}
 	
 	/**
-	 * 
+	 * Note, the $response is not used in this method, but is made available to this method scope to be
+	 * referenced inside the included php template
+	 *
 	 * @param string $filename
 	 * @param Response $response
-	 * @return Ambiguous string or false
+	 * @return bool|string
 	 */
 	private function getIncludeContents($filename, Response $response) {
 		if (is_file($filename)) {

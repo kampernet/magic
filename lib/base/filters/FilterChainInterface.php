@@ -6,6 +6,11 @@
  * @package lib/base/filters
  */
 interface FilterChainInterface {
+
+	/**
+	 * @param AbstractRequest $request
+	 * @param FilterChainInterface $filter
+	 */
 	public function __construct(AbstractRequest &$request, FilterChainInterface $filter = null);
 	/**
 	 * do whatever processing you need 

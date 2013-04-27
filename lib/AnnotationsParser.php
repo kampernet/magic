@@ -8,6 +8,8 @@ class AnnotationsParser {
 
 	/**
 	 * gets the annotations
+	 *
+	 * @param Reflector $reflector
 	 * @return array
 	 */
 	public static function getAnnotations(Reflector $reflector) {

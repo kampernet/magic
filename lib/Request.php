@@ -10,6 +10,9 @@ class Request extends AbstractRequest {
 
 	private static $_instance = null;
 
+	/**
+	 * Instantiates an HTTP Request from the PHP superglobals
+	 */
 	private function __construct() {
 		 
 		$this->params = array_merge($_GET, $_POST);

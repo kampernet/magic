@@ -6,7 +6,6 @@
  */
 abstract class Model extends DataModel {
 
-	private $_properties = array();
 	/**
 	 * @var AbstractRequest
 	 */
