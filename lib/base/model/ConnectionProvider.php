@@ -47,15 +47,16 @@ class ConnectionProvider {
 	 * @return DataAccessInterface
 	 */
 	public function getConnection($role = DatabaseTypeEnum::MASTER) {
-		
-		$database = Configuration::getInstance()->environment->xpath("database[@role='$role']");
+
+		$root = basename(realpath(__DIR__ . "/../../../"));
+		$database = Configuration::getInstance()->xpath("environment[@rootFolderName='$root']/database[@role='$role']");
 		
 		$class = (string) $database[0]->attributes()->class;
 		$host = (string) $database[0]->attributes()->host;
 		$name = (string) $database[0]->attributes()->name;
 		$user = (string) $database[0]->attributes()->user;
 		$pass = (string) $database[0]->attributes()->pass;
-		
+
 		return new $class($host, $user, $pass, $name);
 	}
 }

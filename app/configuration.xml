@@ -2,6 +2,9 @@
 <!DOCTYPE config [
         <!ELEMENT config (environment|constants)*>
         <!ELEMENT environment (database)*>
+        <!ATTLIST environment
+            name CDATA #REQUIRED
+            rootFolderName CDATA #REQUIRED>
         <!ELEMENT database (#PCDATA)>
         <!ATTLIST database
                 role CDATA #REQUIRED
@@ -17,14 +20,13 @@
                 value CDATA #REQUIRED>
         ]>
 <config>
-	<!-- 
-	TODO: make it like <environment name="dev" rootFolderName="magic.local">
+	<!--
 	then make the app aware of what environment it's running on
 	based on path to code folder name ( rootFolderName )
 	
 	have constants and environment variables separate.
 	 -->
-	<environment>
+	<environment name="dev" rootFolderName="magic.local">
 		<database role="master" class="MySQLiDAO" host="127.0.0.1" name="magic" user="root" pass="" />
 	</environment>
 	<constants>

@@ -12,7 +12,7 @@ class RequestRoutingFilter extends BaseFilter {
 	 */
 	public function applyFilter() { 
 
-		$uri = $this->request->path[0];
+		$uri = "/".implode("/", $this->request->path);
 		$route = Application::getInstance()->actions->xpath("action[@uri='$uri']");
 
 		if (isset($route[0])) { 

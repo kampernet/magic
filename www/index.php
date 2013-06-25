@@ -3,25 +3,27 @@
  * all requests that aren't to static files get routed here via .htaccess
  * mod rewrite rules.
  */
+
 try {
 	require "../bootstrap.php"; // prepare autoloader
 
-	$d = new Delegator(); // instantiate the di container
+	$d = new Delegator(); // instantiate the delegator
 	EventListenerRegister::registerEventListeners($d); // register event listeners
-	FilterManager::applyPreFilters(Request::getInstance()); // apply pre processing filters on the request
+	$request = Request::getInstance();
+	FilterManager::applyPreFilters($request); // apply pre processing filters on the request
 	
 	/*
 	 * perform the action of the request
 	 * through the delegator / di container
 	 */
-	Request::getInstance()->response->data[Request::getInstance()->path[0]] = $d->delegate(Request::getInstance()); 
+	$request->response->data[$request->path[0]] = $d->delegate($request); 
 	
 } catch (Exception $e) {
 	Request::getInstance()->response->addMessage($e->getMessage(), 'error');
 }
 
 try {
-	FilterManager::applyPostFilters(Request::getInstance()); // apply post processing filters on the request
+	FilterManager::applyPostFilters($request); // apply post processing filters on the request
 } catch(Exception $e) {
 	
 }
